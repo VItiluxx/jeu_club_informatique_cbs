@@ -13,8 +13,6 @@
 
         }
 
-
-
         /*============================================================================================================================ */    
         
         public function affichePageJeux()
@@ -57,12 +55,13 @@
         }
 
         /*============================================================================================================================ */    
-           public function affichePageFormulaire()
-           {
-   
-               require(VIEW_ROOT."formulaire.php");
-   
-           }
+        
+        public function affichePageFormulaire()
+        {
+
+            include(VIEW_ROOT."formulaire.php");
+
+        }
     }
 
 ?>

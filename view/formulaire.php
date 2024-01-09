@@ -51,5 +51,5 @@
         <!----------------fin: CORPS DE LA PAGE ---------------------------->
 
 <!----------------DEBUT: PIED DE LA PAGE -------------------------->
-<?php   require("piedPage.php"); ?> 
+<?php require_once("piedPage.php"); ?> 
 <!----------------fin: PIED DE LA PAGE ---------------------------->
