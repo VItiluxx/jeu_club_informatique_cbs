@@ -12,6 +12,8 @@
                           "filiere.php" =>             ["controller" => "allMethod", "method" => "affichePageFiliere"], 
                           "solo.php" =>                ["controller" => "allMethod", "method" => "affichePageSolo"],                    
                           "jeux.php" =>                ["controller" => "allMethod", "method" => "affichePageJeux"],                    
+                          "formulaire.php" =>          ["controller" => "allMethod", "method" => "affichePageFormulaire"],  
+                                
 
                         ];
     

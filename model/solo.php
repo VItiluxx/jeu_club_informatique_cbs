@@ -32,13 +32,6 @@
             $requette->execute();
         }
 
-        public function setInsererJeuSolo($libelle)
-        {
-            $requette = $this->connexionBd->prepare('INSERT INTO solo(jeux_solo) VALUE (:libelle) ');
-            $requette->bindParam(':libelle', $libelle, PDO::PARAM_STR);
-            $requette->execute();
-        }
-
         public function setUpdateJeuSolo($libelle,$id_solo)
         {
             $requette = $this->connexionBd->prepare('UPDATE solo SET jeux_solo = :libelle WHERE id_solo = :id_solo');

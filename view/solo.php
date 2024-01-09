@@ -39,18 +39,18 @@
                             }
                         }
 
-                            $nombre_aleatoir = random_int(0, 100);
+                            $nombre_aleatoir = random_int(1, 100);
                         
                         // for($i=0; $i < $nombre_tirage_existant; $i++)
                         // {
                             // if($nombre_aleatoir == $tirage_existant[$i])
-                            $test = "ok";
+                            $test = "";
                             while(key_exists($nombre_aleatoir, $tirage_existant))
                             {
                                 $test = "chiffre_exist";
                                 echo $test."<br>";
-                                $nombre_aleatoir = random_int(0, 100);
-                                $test = "ok";
+                                $nombre_aleatoir = random_int(1, 100);
+                                $test = "chiffre_nexiste_pas";
                                 // $i = 0; 
                                 // if($nombre_tirage_existant == 100)
                                 // {
@@ -63,7 +63,7 @@
                             //     break;
                             // }
                         // }
-                        if($test !== "chiffre_exist")
+                        if($test === "chiffre_nexiste_pas")
                         {
                             echo $nombre_aleatoir."<br>";
                             
