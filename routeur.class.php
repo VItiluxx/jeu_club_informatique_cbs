@@ -14,7 +14,6 @@
                           "jeux.php" =>                ["controller" => "allMethod", "method" => "affichePageJeux"],                    
                           "formulaire.php" =>          ["controller" => "allMethod", "method" => "affichePageFormulaire"],  
                                 
-
                         ];
     
     

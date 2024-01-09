@@ -28,14 +28,16 @@
                 <form method="post">
                     
                     <p id="p-form_admin"> PUBLIER UN JEU </p>
+
                     <div>
-                        <label for="libelle_exe">Choisir le type de jeu: </label>
+                        <label for="choix_jeux">Choisir le type de jeu: </label>
                         <select name="choix_jeux" id="choix_jeux">
+                            <option value="">SOLO OU DUEL</option>
                             <option value="solo">SOLO</option>
                             <option value="duel">DUEL</option>
                         </select>
-
                     </div>
+                    
                     <div>
                         <label for="libelle_exe">Libelle du jeu ici: </label>
                         <textarea class="textarea-form_admin" name="libelle_exe" placeholder="Ennocé du jeu"></textarea>
