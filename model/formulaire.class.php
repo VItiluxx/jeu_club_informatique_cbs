@@ -1,7 +1,7 @@
 <?php
     include_once("connexionBd.php");
     
-    class jeu
+    class formulaire
     {
         private $connexionBd;
 

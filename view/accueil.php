@@ -1,10 +1,4 @@
-<!---------------debut: ENTETE OU BANNIERE DE LA PAGE --------------------------> 
-<?php require_once("entetePage.php"); ?>
-<!----------------fin: ENTETE DE LA PAGE ----------------------------------------->
-
-
 <!----------------debut: CORPS DE LA PAGE -------------------------->
-
 
 <main class="main-corpsPageSujetAccueil">
 <h1 id="h1-HorizontalCenter">BIENVENUE AUX JEU DE COMPETIONS DU CLUB INFORMATIQUE 2023 - 2024</h1>
@@ -34,8 +28,3 @@
 
 </main>
 <!----------------fin: CORPS DE LA PAGE -------------------------->
-
-
-<!----------------DEBUT: PIED DE LA PAGE -------------------------->
-<?php   require("piedPage.php"); ?> 
-<!----------------fin: PIED DE LA PAGE ---------------------------->

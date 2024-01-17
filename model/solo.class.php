@@ -24,6 +24,7 @@
             $donnees = $requette->fetchAll(PDO::FETCH_OBJ);
             return $donnees;
         }
+        
         public function setInsererTirageSolo($tirage_solo)
         {
             $requette = $this->connexionBd->prepare('UPDATE solo SET tirage_solo = :tirage_solo WHERE id_solo = :tirage_solo');

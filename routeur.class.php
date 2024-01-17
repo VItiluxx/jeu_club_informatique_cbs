@@ -6,14 +6,20 @@
     {
         private $requette;
         private $route = [
-                            
+                          "formulaire.php" =>          ["controller" => "allMethod", "method" => "affichePageFormulaire"],
                           "accueil.php" =>             ["controller" => "allMethod", "method" => "affichePageAccueil" ], 
                           "duel.php" =>                ["controller" => "allMethod", "method" => "affichePageDuel"], 
                           "filiere.php" =>             ["controller" => "allMethod", "method" => "affichePageFiliere"], 
                           "solo.php" =>                ["controller" => "allMethod", "method" => "affichePageSolo"],                    
-                          "jeux.php" =>                ["controller" => "allMethod", "method" => "affichePageJeux"],                    
-                          "formulaire.php" =>          ["controller" => "allMethod", "method" => "affichePageFormulaire"],  
-                                
+                          "jeux.php" =>                ["controller" => "allMethod", "method" => "affichePageJeux"],                      
+                          
+                          "formulaire" =>          ["controller" => "allMethod", "method" => "affichePageFormulaire"],
+                          "accueil" =>             ["controller" => "allMethod", "method" => "affichePageAccueil" ], 
+                          "duel" =>                ["controller" => "allMethod", "method" => "affichePageDuel"], 
+                          "filiere" =>             ["controller" => "allMethod", "method" => "affichePageFiliere"], 
+                          "solo" =>                ["controller" => "allMethod", "method" => "affichePageSolo"],                    
+                          "jeux" =>                ["controller" => "allMethod", "method" => "affichePageJeux"],                      
+                           
                         ];
     
     

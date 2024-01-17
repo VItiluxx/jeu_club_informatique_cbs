@@ -363,6 +363,12 @@ body .BanniereSuperieur .menu-toggle
         width: 220px;
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Effet d'ombre pour le ressorti */
     }
+
+    #choix_jeux
+    {
+        color: red;
+        width: 200px;
+    }
 /*============================================================================================= */
 /* special accueil */
 
