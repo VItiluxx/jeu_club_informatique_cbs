@@ -9,16 +9,27 @@
             $this->connexionBd = $connexion;
         }
 
-        public function getAfficheJeuSolo($id_solo)
+        public function AfficheJeu_Solo($id_solo)
         {
-            $requette = $this->connexionBd->prepare('SELECT * FROM solo WHERE id_solo = :id_solo');
+            $requette = $this->connexionBd->prepare('SELECT jeux_solo FROM solo WHERE id_solo = :id_solo');
             $requette->bindParam(':id_solo', $id_solo, PDO::PARAM_INT);
+            $requette->execute();
             $donnees = $requette->fetchAll(PDO::FETCH_OBJ);
             return $donnees;
         }
 
 
-        public function getAfficheTirageSolo()
+        public function AfficheBonneReponseJeu_Solo($id_solo)
+        {
+            $requette = $this->connexionBd->prepare('SELECT bonne_reponse_jeu_solo FROM solo WHERE id_solo = :id_solo');
+            $requette->bindParam(':id_solo', $id_solo, PDO::PARAM_INT);
+            $requette->execute();
+            $donnees = $requette->fetchAll(PDO::FETCH_OBJ);
+            return $donnees;
+        }
+
+
+        public function AfficheListeDesChiffres_Solo()
         {
             $requette = $this->connexionBd->query('SELECT tirage_solo FROM solo');
             $donnees = $requette->fetchAll(PDO::FETCH_OBJ);
@@ -27,9 +38,9 @@
         
         public function setInsererTirageSolo($tirage_solo)
         {
-            $requette = $this->connexionBd->prepare('UPDATE solo SET tirage_solo = :tirage_solo WHERE id_solo = :tirage_solo');
-            $requette->bindParam(':tirage_solo', $tirage_solo, PDO::PARAM_INT);
-            $requette->bindParam(':id_solo', $tirage_solo, PDO::PARAM_INT);
+            $requette = $this->connexionBd->prepare('UPDATE solo SET tirage_solo = :tirage WHERE id_solo = :id');
+            $requette->bindParam(':tirage', $tirage_solo, PDO::PARAM_INT);
+            $requette->bindParam(':id', $tirage_solo, PDO::PARAM_INT);
             $requette->execute();
         }
 

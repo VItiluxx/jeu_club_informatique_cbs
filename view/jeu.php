@@ -3,7 +3,8 @@
 
     <div class="div-contenu_corpsPageSujets">
 
-        <h1>FAITES VOTRE CHOIX</h1>
+        <h1 id="h1-HorizontalCenter">FAITES VOTRE CHOIX</h1>
+        <br><br><br>
 
         <section class="section-sujet">
             <a href="solo.php">

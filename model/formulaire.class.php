@@ -9,10 +9,11 @@
             $this->connexionBd = $connexion;
         }
 
-        public function setInsererJeuSolo($libelle)
+        public function setInsererJeuSolo($libelle,$reponse)
         {
-            $requette = $this->connexionBd->prepare('INSERT INTO solo(jeux_solo) VALUE (:jeux_solo) ');
+            $requette = $this->connexionBd->prepare('INSERT INTO solo(jeux_solo,bonne_reponse_jeu_solo) VALUE (:jeux_solo,:reponse) ');
             $requette->bindParam(':jeux_solo', $libelle, PDO::PARAM_STR);
+            $requette->bindParam(':reponse', $reponse, PDO::PARAM_STR);
             $requette->execute();
             return true;
         }

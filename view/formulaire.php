@@ -19,6 +19,10 @@
                 <label for="libelle_exe">Libelle du jeu ici: </label>
                 <textarea class="textarea-form_admin" name="libelle_exe" placeholder="Ennocé du jeu"></textarea>
             </div>
+            <div>
+                <label for="libelle_bonne_reponse">Saisir la Bonne reponse du jeu ici: </label>
+                <textarea class="textarea-form_admin" name="libelle_bonne_reponse" placeholder="Ennocé de la reponse correcte"></textarea>
+            </div>
     
             <button type="submit" name="soumettre"> SOUMETTRE </button>
     

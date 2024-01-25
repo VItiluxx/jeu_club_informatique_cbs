@@ -9,10 +9,11 @@ class allMethod
         if(isset($_POST["soumettre"]))
         {
             $jeu = $_POST["libelle_exe"];
+            $reponse = $_POST["libelle_bonne_reponse"];
 
             if($_POST["choix_jeux"] === "solo")
             {
-                $testInsertion = $objet->setInsererJeuSolo($jeu);
+                $testInsertion = $objet->setInsererJeuSolo($jeu,$reponse);
  
                 if($testInsertion === true)
                 {

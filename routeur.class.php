@@ -13,12 +13,12 @@
                           "solo.php" =>                ["controller" => "allMethod", "method" => "affichePageSolo"],                    
                           "jeux.php" =>                ["controller" => "allMethod", "method" => "affichePageJeux"],                      
                           
-                          "formulaire" =>          ["controller" => "allMethod", "method" => "affichePageFormulaire"],
-                          "accueil" =>             ["controller" => "allMethod", "method" => "affichePageAccueil" ], 
-                          "duel" =>                ["controller" => "allMethod", "method" => "affichePageDuel"], 
-                          "filiere" =>             ["controller" => "allMethod", "method" => "affichePageFiliere"], 
-                          "solo" =>                ["controller" => "allMethod", "method" => "affichePageSolo"],                    
-                          "jeux" =>                ["controller" => "allMethod", "method" => "affichePageJeux"],                      
+                          "formulaire" =>              ["controller" => "allMethod", "method" => "affichePageFormulaire"],
+                          "accueil" =>                 ["controller" => "allMethod", "method" => "affichePageAccueil" ], 
+                          "duel" =>                    ["controller" => "allMethod", "method" => "affichePageDuel"], 
+                          "filiere" =>                 ["controller" => "allMethod", "method" => "affichePageFiliere"], 
+                          "solo" =>                    ["controller" => "allMethod", "method" => "affichePageSolo"],                    
+                          "jeux" =>                    ["controller" => "allMethod", "method" => "affichePageJeux"],                      
                            
                         ];
     

@@ -315,6 +315,13 @@ body .BanniereSuperieur .menu-toggle
 
 /* CSS POUR LE SITE DES JEUX DE COMPETITIONS DU CLUB INFORMATIQUE CBS 2023-2024 
 ============================================================================================ */
+    #h1-HorizontalCenter
+    {
+        width: 50px;
+        text-align: center;
+        width: auto;
+    }
+
     .cercle_transparent
     {
         border: 5px solid black;
