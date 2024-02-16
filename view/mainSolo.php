@@ -86,6 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
 /*
 Avec ce code JavaScript ci haut, la variable goodAnswer stocke la bonne réponse du QCM.
 Lorsqu'un choix est sélectionné, le texte de ce choix est comparé avec la bonne réponse.

@@ -72,7 +72,7 @@
         </button> 
 
         <input type="hidden" id="traitement_boutton" name="traitement_boutton" value=""/>
-        <input type="submit" class="boutton_rouge" name="boutton_rouge" value="Top" onclick="document.getElementById('traitement_boutton').value = 'true';" />                                                   
+        <input type="submit" class="boutton_rouge" name="boutton_rouge" value="Top" onclick="document.getElementById('traitement_boutton').value = 'true';" onclick="startAnimation()"/>                                                   
         
         <?php 
             if(isset($_POST["boutton_rouge"]))
@@ -86,6 +86,8 @@
         ?>
 
     </form>
+
+    
 
 </main>
 <!----------------fin: CORPS DE LA PAGE -------------------------->
