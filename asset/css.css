@@ -21,297 +21,12 @@ body
     word-spacing: 0px; /* Réduire l'espacement entre les mots */
     margin-top: 55px;
 }
+
+
+
 /*-------------------###############-> p1-fin <-################-------------------------------------------------------------------------------*/
 
 
-
-/* ----------------------##############################-----------------------------------------------------------------------------------------
-    PROPRIETES APPLIQUERS A LA BANNIERE SUPERIEUR OU " HEADER-Navbar "
--------------------###############-> p2-debut <-################-------------------------------------------------------------------------------*/
-
-body .BanniereSuperieur
-{
-    margin: 0;
-    background-color:#0088a9;
-    color: white;
-    width: 100%;
-    height: 50px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;   
-   
-}
-
-    body .BanniereSuperieur #logo_banniereSuperieur
-    {
-        float: left;
-        width: 45px;
-        max-width: 45px;
-        height: 45px;
-        max-height: 45px;
-        border-radius: 50%;
-        object-fit:cover;
-        /* border: solid 3px black; */
-        position: relative;
-        top: 2px;
-        left: 14px;
-
-    }
-
-    body .BanniereSuperieur .ul-global
-    {
-        position: absolute; 
-        margin-left: 100px;
-        top: 12px;
-        max-width: 550px;
-        text-align: center;
-        /* border: 1px solid red; */
-    }
-        body .BanniereSuperieur .ul-global li
-        {
-            list-style: none;
-            display: inline-block;
-            text-decoration: rgb(8, 189, 8);
-            margin-left: 20px;
-            /* border: 2px solid yellow; */
-        }
-        body .BanniereSuperieur .ul-global #menuAccueil
-        {
-            margin-left: 0;
-        }   
-
-            body .BanniereSuperieur .ul-global li a
-            {
-                color: white;
-                text-decoration: none;               
-                display: flex;/*envoie les options a droite*/ 
-                letter-spacing: 0.1rem;
-            }
-                body .BanniereSuperieur .ul-global li a:hover
-                {
-                    color:rgb(23, 23, 78);
-                    text-decoration: none;
-                    background-color: rgba(245, 245, 245, 0.895);
-                    border-radius: 5px 5px 5px 5px ;
-                    height:24px;
-                    padding: 2px;
-                }
-
-
-            select 
-            {
-                color: white;
-                appearance: none;
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                background: none;
-                width: 48px;
-                outline: none;
-                box-shadow: none;
-                padding: 0; 
-                border: 0;
-                font-size: 14.5px;
-                letter-spacing: 0.1rem;
-            }
-            select:hover{
-                color:#0088a9;
-                background-color: rgba(245, 245, 245, 0.895);
-            }
-                select option
-                {
-                    color:rgb(19, 0, 0);
-                    background-color: rgba(245, 245, 245, 0.895);
-                }
-           
-
-                body .BanniereSuperieur #barreDeRechercheBanniere
-                {
-                    position: absolute;
-                    left: 900px;
-                    top: 11px;
-                    max-width: 400px;
-                    max-height: 65px;
-                    text-align: center;
-                    color: white;
-                    /* border:2px solid red; */
-                }
-                    
-                    #barreDeRechercheBanniere #champ_barreDeRechercheBanniere
-                    {
-                        background-color:rgba(255, 255, 255, 0.66);
-                        border: 1.5px solid rgb(205, 201, 201);
-                        color: #0f0303;
-                        padding: 4px; 
-                        width: 200px;  
-                        border-radius: 10px;
-                    }
-                        .BanniereSuperieur #barreDeRechercheBanniere button
-                        {
-                            background-color: rgba(73, 247, 180, 0.653);
-                            margin-left: 2px;
-                            border-radius: 10px;
-                            padding: 2px;
-                            border: 1px solid rgba(215, 212, 212, 0.815);
-                        }
-                        .BanniereSuperieur #barreDeRechercheBanniere button:hover
-                        {
-                            margin-left: 2px;
-                            font-size: 14px;
-                            color: white;
-                        }
-
-
-                .BanniereSuperieur #form-bouttons-con_insc{
-                    display: none;
-                    position: relative;
-                    left: 1000px;
-                    top: -33px;
-                    max-width: 250px;
-                    max-height: 55px;
-                    text-align: left;
-                    /*border:2px solid red;*/
-                }
-                    .BanniereSuperieur #div-bouttons-con a #boutton-con{
-                        
-                        background-color: #149506; /* Couleur de fond du bouton */
-                        color: rgb(255, 255, 255);
-                        font-weight: bold;
-                        padding: 5px;
-                        font-size: 12px;
-                        border-radius: 5px;
-                        font-weight: bolder;
-                        border: 0.5px;
-                        position: absolute;
-                        right: 60px;
-                        top: 10px;
-                        max-width: 350px;
-                        max-height: 45px;
-                        cursor: pointer;
-                    }
-                    .BanniereSuperieur #div-bouttons-con a #boutton-con:hover{
-                        font-size:smaller;
-                        background-color: rgba(229, 5, 5, 0.817);
-
-                    }
-
-                        .BanniereSuperieur #form-bouttons-con_insc #boutton-insc{
-                            display: none;
-                            background-color: rgb(29, 13, 245);
-                            color: white;
-                            font-weight: bold;
-                            padding: 5px;
-                            font-size: 8px;
-                            border-radius: 5px;
-                            
-                        }
-                            .BanniereSuperieur #barreConInscription #boutton-con:hover{
-                                display: none;
-                                background-color: rgb(235, 101, 53);
-                            }
-                                .BanniereSuperieur #barreConInscription #boutton-insc:hover{
-                                    display: none;
-                                    background-color: rgb(235, 101, 53);
-                                }
-
-body .BanniereSuperieur #icone-menu 
-{
-    position:absolute;
-    height: 35px;
-    width: 35px;
-    right: 10px;
-    top: 5px;
-    margin:0;
-}
-body .BanniereSuperieur #icone-menuTelephone 
-{
-    position:absolute;
-    height: 35px;
-    width: 35px;
-    right: 10px;
-    top: 5px;
-    margin:0;
-}
-            
-body .BanniereSuperieur .banderole-menu {
-    display: NONE;
-    position: relative;
-    top: 50px;
-    right: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    /*  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
-}
-     /* Afficher le menu déroulant lorsque l'icône de menu est cliquée */
-     body .BanniereSuperieur .banderole-menu-open    
-     {
-        display: block;
-        position: absolute;  
-        padding: 0;
-        margin: 0;
-        top: 40px;
-        right: 14px;
-        background-color: rgba(255, 255, 255, 0.968);
-        border: 1px solid #00000095;
-        width: 20%;
-        height: 550px;
-       /* box-shadow: 1px 0px 0px rgb(233, 232, 232);*/
- 
-    }
-
-        body .BanniereSuperieur .banderole-menu-open ul 
-        {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            top: 0;
-            width: 100%;
-            display: flex;  
-            flex-direction: column;
-        }
-            body .BanniereSuperieur .banderole-menu-open ul li 
-            {
-                margin-left: 10px;
-            }
-                body .BanniereSuperieur .banderole-menu-open ul li a 
-                {
-                    color: #000000;
-                    font-size: 18px;
-                    font-weight: bold;
-                    text-decoration: none;
-                    /* border: 2px solid green; */
-                }
-                    body .BanniereSuperieur .banderole-menu-open ul li a p
-                    {
-                        padding: 10px 0px;
-                    }
-                    body .BanniereSuperieur .banderole-menu-open ul li a p:hover
-                    {
-                        background-color:  #0088a9;
-                        color: whitesmoke;
-                        border-radius: 3px 3px 3px 3px;
-                    }
-                    
-/* 
-body .BanniereSuperieur .menu-toggle 
-{
-    display: none;
-    background-color: #333;
-    color: #ffffff;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    position: relative;
-    padding: 0;
-    margin: 0;
-} */
-/*-------------------###############-> p2-fin <-################-------------------------------------------------------------------------------*/
- 
-
-
-/* ----------------------##############################-----------------------------------------------------------------------------------------
-    PROPRIETES APPLIQUES AU CONTENU POSITIONNER ENTRE [LA BANNIERE SUPERIEUR] [ET] [LA BANNIERE INFERIEUR] DES DIFFERENTES PAGES
--------------------###############-> p3-debut <-################--------------------------------------------------------------------------------*/
 
 /* CSS POUR LE SITE DES JEUX DE COMPETITIONS DU CLUB INFORMATIQUE CBS 2023-2024 
 ============================================================================================ */
@@ -376,6 +91,80 @@ body .BanniereSuperieur .menu-toggle
         color: red;
         width: 200px;
     }
+    #button-jouerANouveau{
+        margin-top: 60px;
+        background-color: #6beeff6c;
+        height: auto;
+        width: auto;
+        padding: 9px;
+        box-shadow: 5px 5px 15px rgba(120, 111, 111, 0.181); /* Effet d'ombre pour le ressorti */
+        border-radius: 20px;
+    }
+
+/*============================================================================================*/
+.question {
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 80%;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.top-choices {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-choices {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.choice {
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #bcbaba75; /* Fond blanc par défaut */
+}
+
+.choice:hover {
+    background-color: rgb(0, 170, 255);
+}
+
+/* [data-answer="correct"] {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+[data-answer="wrong"] {
+    background-color: rgba(255, 255, 255, 0);
+} */
+
+.choice.selected {
+    background-color: lightblue; /* Couleur au clic pour indiquer le choix */
+}
+
+.choice.correct {
+    background-color: lightgreen; /* Couleur des bonnes réponses */
+}
+
+.choice.wrong {
+    background-color: salmon; /* Couleur des mauvaises réponses */
+}
 /*============================================================================================= */
 /* special accueil */
 
@@ -532,65 +321,6 @@ body .BanniereSuperieur .menu-toggle
                             margin-bottom: 0;
                         }
 
-/* DANS LA PAGE zoneSuperviseur */
-/* Styles pour la mise en page */
-.contenuPage
-{
-    margin-top: 50px;
-    padding: 20px;
-}
-
-/* Styles pour chaque section */
-.section-EEC_uti_zoneSuperviseur
-{
-    padding:2px 4px ;
-    margin: 20px 10px;
-    width: 350px;
-    border: 1px solid  rgba(203, 203, 203, 0.852);
-    border-radius: 10px;
-    background-color: rgb(226, 221, 221);
-    color: #333;
-    box-shadow: 2px 0px 4px rgb(233, 232, 232);
-    font-size: 20px;
-    text-align: justify;
-}
-    .contenuPage .section-EEC_uti_zoneSuperviseur .p-texte_exercice
-    {
-        font-size: 20px;
-        font-weight: bold;
-        color: rgb(243, 99, 99);
-    }
-        .contenuPage .section-EEC_uti_zoneSuperviseur .p-texte_titre
-        {
-            color: #333;
-            font-size: 15px;
-        }
-            .contenuPage .section-EEC_uti_zoneSuperviseur button
-            {
-                border: 0;
-                padding: 1px;
-                background-color: #ffffff00;
-                color: rgb(11, 43, 202);
-            }
-                .contenuPage .section-EEC_uti_zoneSuperviseur button:hover
-                {
-                    color: rgb(0, 0, 0);
-                    background-color: rgba(231, 224, 42, 0.828);
-                    /* background-color: #f13f3feb; */
-                }
-
-.contenuPage .ligneHorizontale {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -10px; /* Espacement négatif pour compenser la marge des colonnes */
-}
-
-.contenuPage .ligneHorizontale .tailleColonneMoyenne {
-    flex: 0 0 calc(33.333% - 20px); /* Calcul de la largeur des colonnes avec un espacement de 20px entre les colonnes */
-    margin: 10px; /* Espacement entre les colonnes */
-    box-sizing: border-box; /* Boîte de modèle pour inclure les marges dans le calcul de la largeur */
-}
-
 /* DANS LA PAGE corpsPageSujet */
 body .main-corpsPageSujetAccueil
 {
@@ -637,7 +367,7 @@ body .main-corpsPageSujetAccueil
             margin-bottom: 20px;
             border: 1px solid #ccc;
             border-radius: 50px;
-             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 300px;
             text-align: center;
             margin: 0 auto;
@@ -750,24 +480,6 @@ body .main-corpsPageSujetAccueil
 
         }
 
-/* Style pour l'icône PDF */
-.section-sujets td .pdf-icon {
-    margin-right: 5px; /* Marge à droite de l'icône */
-    font-size: 16px; /* Taille de l'icône */
-    vertical-align: middle; /* Alignement vertical au milieu */
-}
-
-/* Style pour le texte de la matière et de l'année */
-.section-sujets td .matiere {
-    font-size: 18px; /* Taille de la police pour la matière */
-    font-weight: bold; /* Texte en gras */
-}
-
-/* Style pour l'année */
-.section-sujets td .annee {
-    font-size: 16px; /* Taille de la police pour l'année */
-    color: #777; /* Couleur de texte grise pour l'année */
-}
 /*-------------------###############-> p3-fin <-################-------------------------------------------------------------------------------*/
 
 
@@ -925,72 +637,6 @@ body .main-corpsPageSujetAccueil
 /*-------------------###############-> p4-fin <-################-------------------------------------------------------------------------------*/
 
 
-
-/* ----------------------##############################-----------------------------------------------------------------------------------------
-    PROPRIETES APPLIQUERS A LA BANNIERE INFERIEUR OU " FOOTER-Navbar "
--------------------###############-> p5-debut <-################--------------------------------------------------------------------------------*/
-
-.banniereInferieur
-{
-    margin: 0;
-    margin-top: 10px;
-    padding: 5px;
-    background-color:#0088a9;  
-    color: white;
-    color: white;
-    width: 100%;
-    height: 40px;
-
-}
-     .banniereInferieur .icone-face{
-        position:absolute;
-        height: 15px;
-        width: 15px;
-        right: 180px;
-        margin: -10px;
-       /* border: 3px solid yellow;*/
-        object-fit: cover;
-    }
-        .banniereInferieur .icone-insta{
-            position:absolute;
-            height: 15px;
-            width: 15px;
-            right: 150px;
-            margin: -10px;
-            /*border: 3px solid yellow;*/
-            object-fit: cover;
-        }
-            .banniereInferieur .icone-mail{
-                position:absolute;
-                height: 15px;
-                width: 15px;
-                right: 120px;
-                margin: -10px;
-                /*border: 3px solid yellow;*/
-                object-fit: cover;
-            }
-                .banniereInferieur .icone-whatsapp{
-                    position:absolute;
-                    height: 15px;
-                    width: 15px;
-                    right: 90px;
-                    margin: -10px;
-                   /* border: 3px solid yellow;*/
-                   object-fit: cover;
-                }
-                    .banniereInferieur .icone-y2b{
-                        position:absolute;
-                        height: 15px;
-                        width: 15px;
-                        right: 60px;
-                        margin: -10px;
-                        /*border: 3px solid yellow;*/
-                        object-fit: cover;
-                    }
-/*-------------------###############-> p5-fin <-################-------------------------------------------------------------------------------*/
-
-
-
 /* ----------------------##############################-----------------------------------------------------------------------------------------
     PROPRIETES RESPONSIVE " @media " ADAPTATION DU SITE A TOUS LES ECRANS DIMENSION->[SAMARTPHONE][TABLETTE][PC][ECRAN-TV]
 -------------------###############-> p00-debut <-################--------------------------------------------------------------------------------*/
@@ -1117,88 +763,6 @@ body .main-corpsPageSujetAccueil
 .banniereInferieur p {
     font-size: 10px;
  }
- .banniereInferieur .icone-face{
-     position:absolute;
-     height: 15px;
-     width: 15px;
-     right: 160px;
-     margin: -10px;
-    /* border: 3px solid yellow;*/
-     object-fit: cover;
- }
-     .banniereInferieur .icone-insta{
-         position:absolute;
-         height: 15px;
-         width: 15px;
-         right: 135px;
-         margin: -10px;
-         /*border: 3px solid yellow;*/
-         object-fit: cover;
-     }
-         .banniereInferieur .icone-mail{
-             position:absolute;
-             height: 15px;
-             width: 15px;
-             right: 105px;
-             margin: -10px;
-             /*border: 3px solid yellow;*/
-             object-fit: cover;
-         }
-             .banniereInferieur .icone-whatsapp{
-                 position:absolute;
-                 height: 15px;
-                 width: 15px;
-                 right: 75px;
-                 margin: -10px;
-                /* border: 3px solid yellow;*/
-                object-fit: cover;
-             }
-                 .banniereInferieur .icone-y2b{
-                     position:absolute;
-                     height: 15px;
-                     width: 15px;
-                     right: 45px;
-                     margin: -10px;
-                     /*border: 3px solid yellow;*/
-                     object-fit: cover;
-                 }
-
-                 
-                .BanniereSuperieur #form-bouttons-con_insc{
-                    display: none;
-                    position: relative;
-                    left: 1000px;
-                    top: -33px;
-                    max-width: 250px;
-                    max-height: 55px;
-                    text-align: left;
-                    /*border:2px solid red;*/
-                }
-                    .BanniereSuperieur #div-bouttons-con a #boutton-con{
-                        
-                        background-color: #149506; /* Couleur de fond du bouton */
-                        color: rgb(255, 255, 255);
-                        font-weight: bold;
-                        padding: 5px;
-                        font-size: 12px;
-                        border-radius: 5px;
-                        font-weight: bolder;
-                        border: 0.5px;
-                        position: absolute;
-                        left: 1000px;
-                        margin-left: 32px;
-                        top: -1px;
-                        max-width: 350px;
-                        max-height: 45px;
-                        cursor: pointer;
-                        margin-bottom: 4px;
-                        
-                        
-                    }
-                    .BanniereSuperieur #div-bouttons-con a #boutton-con:hover{
-                        font-size:smaller;
-
-                    }
 /* FIN ------------------------------------------------------------ */
             
 } /* FIN -> @Media queries---------------------------------------------------- */

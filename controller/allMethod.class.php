@@ -8,12 +8,16 @@ class allMethod
     
         if(isset($_POST["soumettre"]))
         {
-            $jeu = $_POST["libelle_exe"];
-            $reponse = $_POST["libelle_bonne_reponse"];
+            $question_solo = $_POST["question"];
+            $reponse_a_solo = $_POST["reponse_a"];
+            $reponse_b_solo = $_POST["reponse_b"];
+            $reponse_c_solo = $_POST["reponse_c"];
+            $reponse_d_solo = $_POST["reponse_d"];
+            $bonne_reponse_solo = $_POST["bonne_reponse"];
 
             if($_POST["choix_jeux"] === "solo")
             {
-                $testInsertion = $objet->setInsererJeuSolo($jeu,$reponse);
+                $testInsertion = $objet->setInsererJeuSolo($question_solo,$reponse_a_solo,$reponse_b_solo,$reponse_c_solo,$reponse_d_solo,$bonne_reponse_solo);
  
                 if($testInsertion === true)
                 {
@@ -77,6 +81,15 @@ class allMethod
 
         include(VIEW_ROOT."duel.php");
     }
+
+    /*============================================================================================================================ */    
+    public function affichePageMainSolo()
+    { 
+
+        include(VIEW_ROOT."mainSolo.php");
+    }
+
+    
 }
     
 

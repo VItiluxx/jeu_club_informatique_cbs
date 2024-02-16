@@ -12,7 +12,8 @@
                           "filiere.php" =>             ["controller" => "allMethod", "method" => "affichePageFiliere"], 
                           "solo.php" =>                ["controller" => "allMethod", "method" => "affichePageSolo"],                    
                           "jeux.php" =>                ["controller" => "allMethod", "method" => "affichePageJeux"],                      
-                          
+                          "mainSolo.php" =>            ["controller" => "allMethod", "method" => "affichePageMainSolo"],                      
+
                           "formulaire" =>              ["controller" => "allMethod", "method" => "affichePageFormulaire"],
                           "accueil" =>                 ["controller" => "allMethod", "method" => "affichePageAccueil" ], 
                           "duel" =>                    ["controller" => "allMethod", "method" => "affichePageDuel"], 

@@ -9,11 +9,15 @@
             $this->connexionBd = $connexion;
         }
 
-        public function setInsererJeuSolo($libelle,$reponse)
+        public function setInsererJeuSolo($question_solo,$reponse_a_solo,$reponse_b_solo,$reponse_c_solo,$reponse_d_solo,$bonne_reponse_solo)
         {
-            $requette = $this->connexionBd->prepare('INSERT INTO solo(jeux_solo,bonne_reponse_jeu_solo) VALUE (:jeux_solo,:reponse) ');
-            $requette->bindParam(':jeux_solo', $libelle, PDO::PARAM_STR);
-            $requette->bindParam(':reponse', $reponse, PDO::PARAM_STR);
+            $requette = $this->connexionBd->prepare('INSERT INTO solo(question_solo,reponse_a_solo,reponse_b_solo,reponse_c_solo,reponse_d_solo,bonne_reponse_solo) VALUE (:question_solo,:reponse_a_solo,:reponse_b_solo,:reponse_c_solo,:reponse_d_solo,:bonne_reponse_solo) ');
+            $requette->bindParam(':question_solo',  $question_solo, PDO::PARAM_STR);
+            $requette->bindParam(':reponse_a_solo', $reponse_a_solo, PDO::PARAM_STR);
+            $requette->bindParam(':reponse_b_solo', $reponse_b_solo, PDO::PARAM_STR);
+            $requette->bindParam(':reponse_c_solo', $reponse_c_solo, PDO::PARAM_STR);
+            $requette->bindParam(':reponse_d_solo', $reponse_d_solo, PDO::PARAM_STR);
+            $requette->bindParam(':bonne_reponse_solo', $bonne_reponse_solo, PDO::PARAM_STR);
             $requette->execute();
             return true;
         }

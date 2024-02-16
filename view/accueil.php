@@ -13,18 +13,6 @@
                 <h1 >COMMENCER</h1>
             </a>
         </section>
-
-
-        </php
-            $nombrelea = rundInt(100);
-            $n1 = rundomint(100);
-            $n2 = rounint(100);
-            $n3 - rounderInt(100);
-            echo $nombrelea;
-            echo $n1;
-            echo $n2;
-            echo $n3;
-        ?>
     </div>
 
 

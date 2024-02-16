@@ -11,7 +11,7 @@
 
         public function AfficheJeu_Solo($id_solo)
         {
-            $requette = $this->connexionBd->prepare('SELECT jeux_solo FROM solo WHERE id_solo = :id_solo');
+            $requette = $this->connexionBd->prepare('SELECT * FROM solo WHERE id_solo = :id_solo');
             $requette->bindParam(':id_solo', $id_solo, PDO::PARAM_INT);
             $requette->execute();
             $donnees = $requette->fetchAll(PDO::FETCH_OBJ);
@@ -21,7 +21,7 @@
 
         public function AfficheBonneReponseJeu_Solo($id_solo)
         {
-            $requette = $this->connexionBd->prepare('SELECT bonne_reponse_jeu_solo FROM solo WHERE id_solo = :id_solo');
+            $requette = $this->connexionBd->prepare('SELECT bonne_reponse_solo FROM solo WHERE id_solo = :id_solo');
             $requette->bindParam(':id_solo', $id_solo, PDO::PARAM_INT);
             $requette->execute();
             $donnees = $requette->fetchAll(PDO::FETCH_OBJ);

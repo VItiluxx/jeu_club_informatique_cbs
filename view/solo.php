@@ -58,19 +58,10 @@
                         }
                         while($test === true);
 
-                        // if(key_exists($nbrombre_aleatoir, $listeDesChiffres))
-                        // {
-                        //     $test = "chiffre_exist";
-                        //     echo $test."<br>";
-                        //     $nbrombre_aleatoir = random_int(1, 100);
-                        //     $test = "chiffre_nexiste_pas";
-                        // }
-
-
                             if($test === false)
                             {
-                                echo "SOLO N°".$nbrombre_aleatoir."<br>";
-
+                                // echo "SOLO N°".$nbrombre_aleatoir."<br>";
+                                 echo $nbrombre_aleatoir."<br>";
                                 // echo "T=".$nbr_chiffre_deja_tirer."<br>";
                                 // echo "NT=".$nbr_chiffres_non_tirer;
                                 $objetSolo->setInsererTirageSolo($nbrombre_aleatoir);
@@ -88,12 +79,8 @@
                 {   
                     if($_POST["traitement_boutton"] === 'true')
                     {
-                        $jeuDemander = $objetSolo->AfficheJeu_Solo($nbrombre_aleatoir);
-                        foreach($jeuDemander as $jeu)
-                        {
-                            // var_dump($jeu);
-                            echo "<pre>".$jeu->jeux_solo."</pre>";
-                        }
+                        header("Refresh: 4; URL=".HOST."mainSolo.php?id=$nbrombre_aleatoir");
+                        exit;
                     }
                 }
         ?>
