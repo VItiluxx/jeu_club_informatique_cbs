@@ -30,6 +30,8 @@ body
 
 /* CSS POUR LE SITE DES JEUX DE COMPETITIONS DU CLUB INFORMATIQUE CBS 2023-2024 
 ============================================================================================ */
+
+
     #h1-HorizontalCenter
     {
         width: 50px;
@@ -37,6 +39,21 @@ body
         width: auto;
     }
 
+    #output{
+        border: 5px solid black;
+        background-color: rgba(255, 255, 255, 0);
+        color: black;
+        text-align: center;
+        font-size: 80px;
+        font-size: 80px;
+        height: 200px;
+        width: 250px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
     .cercle_transparent
     {
         border: 5px solid black;
