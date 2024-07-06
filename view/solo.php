@@ -11,8 +11,16 @@
                 include(MODEL_ROOT."solo.class.php");
                 $objetSolo = new solo($connexionBd);
         
-                $listeDesChiffres = $objetSolo->AfficheListeDesChiffres_Solo();
-                $nombreDesChiffres = (int)count($listeDesChiffres);
+                $listeDesTirages = $objetSolo->AfficheListeDeTirages_Solo();
+                $nombreDesTirages = (int)count($listeDesTirages);
+                $NombreDesQuestions = array();
+                for($i=0; $i<$nombreDesTirages; $i++)
+                {
+                    $NombreDesQuestions[$i] = $i;
+                }
+                // echo($NombreDesQuestions).'<br/>';
+                // print_r($NombreDesQuestions);
+                // die();
 
                 if(isset($_POST["boutton_rouge"]))
                 {   
@@ -22,9 +30,9 @@
                         $nbr_chiffre_deja_tirer = 0;
                         $nbr_chiffres_non_tirer = 0;
 
-                        foreach($listeDesChiffres as $n)
+                        foreach($listeDesTirages as $ligne)
                         {
-                            $nbr = (int)$n->tirage_solo;
+                            $nbr = (int)$ligne->tirage_solo;
                             // echo $nbr."<br/>";
                             
                             if($nbr == 0 OR $nbr == NULL OR empty($nbr))
@@ -37,28 +45,34 @@
                         }
 
 
-
-                        $nombre_aleatoir = random_int(1, 100);
-                        // echo $nombre_aleatoir;
-
                         $test = true;
                         do{
-                            for($i = 0; $i < $nombreDesChiffres; $i++)
-                            {
-                                foreach($listeDesChiffres as $n)
-                                {
-                                    $nbr = (int)$n->tirage_solo;
-                                    if($nombre_aleatoir === $nbr)
-                                    {
-                                        $nombre_aleatoir = random_int(1, 100);
-                                        $i = 0; 
-                                        break;
-                                    }
-                                }   
-                            }
+                            $nombre_aleatoir = random_int(1, 100);
                             $test = false;
+                            //verifie si le chiifre aleatoir exist dans l'ens des questions disponible dans la bd
+                            // if( in_array($nombre_aleatoir, $NombreDesQuestions) )
+                            // {
+                            //     for($i = 0; $i < $nombreDesTirages; $i++)
+                            //     {
+                            //         foreach($listeDesTirages as $une_ligne)
+                            //         {
+                            //             $tirageDejaEffectuer = (int)$une_ligne->tirage_solo;
+                            //             if($nombre_aleatoir === $tirageDejaEffectuer)
+                            //             {
+                            //                 $nombre_aleatoir = random_int(1, 100);
+                            //                 $i = 0; 
+                            //                 break;
+                            //             }
+                            //         }   
+                            //     }
+                            //     $test = false;
+                            // }
+                            // else{
+                            //     $nombre_aleatoir = random_int(1, 100);
+                            // }
                         }
-                        while($test === true);
+                        while(!in_array($nombre_aleatoir, $NombreDesQuestions) AND !in_array($nombre_aleatoir, $listeDesTirages) );
+
 
                             if($test === false)
                             {   
@@ -73,7 +87,7 @@
                                 // echo "T=".$nbr_chiffre_deja_tirer."<br>";
                                 // echo "NT=".$nbr_chiffres_non_tirer;
                                 $objetSolo->setInsererTirageSolo($nombre_aleatoir);
-                                header("Refresh: 3; URL=".HOST."mainSolo.php?id=$nombre_aleatoir");
+                                header("Refresh: 3; URL=". HOST ."mainSolo.php?id=$nombre_aleatoir");
                                 exit;
                             }
                     }

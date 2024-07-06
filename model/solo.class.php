@@ -29,7 +29,7 @@
         }
 
 
-        public function AfficheListeDesChiffres_Solo()
+        public function AfficheListeDeTirages_Solo()
         {
             $requette = $this->connexionBd->query('SELECT tirage_solo FROM solo');
             $donnees = $requette->fetchAll(PDO::FETCH_OBJ);
