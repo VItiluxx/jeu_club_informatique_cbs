@@ -21,3 +21,23 @@ function animationChiffre(nombreAleatoire){
     }, interval);  
 
 }
+
+// Lorsqu'il est cliqué, la fonction confetti de la bibliothèque canvas-confetti est appelée pour créer l'animation.
+const buttons = document.querySelectorAll('.correct');
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 }
+        });
+    });
+});
+
+import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+const btn = document.querySelectorAll('.correct')
+function makeConfetti(){
+    confetti()
+}
+
+btn.addEventListener("click", makeConfetti)
